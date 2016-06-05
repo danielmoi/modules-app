@@ -1,0 +1,402 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/Users/danielmoi/.npm-packages/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '--save-dev',
+1 verbose cli   'babel-loader',
+1 verbose cli   'coffee-loader',
+1 verbose cli   'ts-loader' ]
+2 info using npm@3.9.3
+3 info using node@v4.2.2
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData babel-loader
+8 silly fetchPackageMetaData coffee-loader
+9 silly fetchPackageMetaData ts-loader
+10 silly fetchNamedPackageData babel-loader
+11 silly mapToRegistry name babel-loader
+12 silly mapToRegistry using default registry
+13 silly mapToRegistry registry https://registry.npmjs.org/
+14 silly mapToRegistry data Result {
+14 silly mapToRegistry   raw: 'babel-loader',
+14 silly mapToRegistry   scope: null,
+14 silly mapToRegistry   name: 'babel-loader',
+14 silly mapToRegistry   rawSpec: '',
+14 silly mapToRegistry   spec: 'latest',
+14 silly mapToRegistry   type: 'tag' }
+15 silly mapToRegistry uri https://registry.npmjs.org/babel-loader
+16 silly fetchNamedPackageData coffee-loader
+17 silly mapToRegistry name coffee-loader
+18 silly mapToRegistry using default registry
+19 silly mapToRegistry registry https://registry.npmjs.org/
+20 silly mapToRegistry data Result {
+20 silly mapToRegistry   raw: 'coffee-loader',
+20 silly mapToRegistry   scope: null,
+20 silly mapToRegistry   name: 'coffee-loader',
+20 silly mapToRegistry   rawSpec: '',
+20 silly mapToRegistry   spec: 'latest',
+20 silly mapToRegistry   type: 'tag' }
+21 silly mapToRegistry uri https://registry.npmjs.org/coffee-loader
+22 silly fetchNamedPackageData ts-loader
+23 silly mapToRegistry name ts-loader
+24 silly mapToRegistry using default registry
+25 silly mapToRegistry registry https://registry.npmjs.org/
+26 silly mapToRegistry data Result {
+26 silly mapToRegistry   raw: 'ts-loader',
+26 silly mapToRegistry   scope: null,
+26 silly mapToRegistry   name: 'ts-loader',
+26 silly mapToRegistry   rawSpec: '',
+26 silly mapToRegistry   spec: 'latest',
+26 silly mapToRegistry   type: 'tag' }
+27 silly mapToRegistry uri https://registry.npmjs.org/ts-loader
+28 verbose request uri https://registry.npmjs.org/babel-loader
+29 verbose request no auth needed
+30 info attempt registry request try #1 at 4:13:33 PM
+31 verbose request using bearer token for auth
+32 verbose request id a019faaf54b84b98
+33 verbose etag "15EMXCK578LUDZ23G95SQDTQ7"
+34 http request GET https://registry.npmjs.org/babel-loader
+35 verbose request uri https://registry.npmjs.org/ts-loader
+36 verbose request no auth needed
+37 info attempt registry request try #1 at 4:13:33 PM
+38 verbose request using bearer token for auth
+39 verbose etag "1GVXDROEPGN5N7E4IMTUW1GQI"
+40 http request GET https://registry.npmjs.org/ts-loader
+41 verbose request uri https://registry.npmjs.org/coffee-loader
+42 verbose request no auth needed
+43 info attempt registry request try #1 at 4:13:33 PM
+44 verbose request using bearer token for auth
+45 verbose etag "7184M2COF87CN6J4XL4FRF5PP"
+46 http request GET https://registry.npmjs.org/coffee-loader
+47 http 304 https://registry.npmjs.org/coffee-loader
+48 verbose headers { 'cache-control': 'max-age=300',
+48 verbose headers   'accept-ranges': 'bytes',
+48 verbose headers   date: 'Sun, 05 Jun 2016 06:13:33 GMT',
+48 verbose headers   via: '1.1 varnish',
+48 verbose headers   connection: 'keep-alive',
+48 verbose headers   'x-served-by': 'cache-syd1623-SYD',
+48 verbose headers   'x-cache': 'MISS',
+48 verbose headers   'x-cache-hits': '0',
+48 verbose headers   'x-timer': 'S1465107213.296211,VS0,VE180',
+48 verbose headers   vary: 'Accept-Encoding' }
+49 silly get cb [ 304,
+49 silly get   { 'cache-control': 'max-age=300',
+49 silly get     'accept-ranges': 'bytes',
+49 silly get     date: 'Sun, 05 Jun 2016 06:13:33 GMT',
+49 silly get     via: '1.1 varnish',
+49 silly get     connection: 'keep-alive',
+49 silly get     'x-served-by': 'cache-syd1623-SYD',
+49 silly get     'x-cache': 'MISS',
+49 silly get     'x-cache-hits': '0',
+49 silly get     'x-timer': 'S1465107213.296211,VS0,VE180',
+49 silly get     vary: 'Accept-Encoding' } ]
+50 verbose etag https://registry.npmjs.org/coffee-loader from cache
+51 verbose get saving coffee-loader to /Users/danielmoi/.npm/registry.npmjs.org/coffee-loader/.cache.json
+52 verbose correctMkdir /Users/danielmoi/.npm correctMkdir not in flight; initializing
+53 http 304 https://registry.npmjs.org/babel-loader
+54 verbose headers { 'cache-control': 'max-age=300',
+54 verbose headers   'accept-ranges': 'bytes',
+54 verbose headers   date: 'Sun, 05 Jun 2016 06:13:33 GMT',
+54 verbose headers   via: '1.1 varnish',
+54 verbose headers   connection: 'keep-alive',
+54 verbose headers   'x-served-by': 'cache-syd1627-SYD',
+54 verbose headers   'x-cache': 'MISS',
+54 verbose headers   'x-cache-hits': '0',
+54 verbose headers   'x-timer': 'S1465107213.316856,VS0,VE179',
+54 verbose headers   vary: 'Accept-Encoding' }
+55 silly get cb [ 304,
+55 silly get   { 'cache-control': 'max-age=300',
+55 silly get     'accept-ranges': 'bytes',
+55 silly get     date: 'Sun, 05 Jun 2016 06:13:33 GMT',
+55 silly get     via: '1.1 varnish',
+55 silly get     connection: 'keep-alive',
+55 silly get     'x-served-by': 'cache-syd1627-SYD',
+55 silly get     'x-cache': 'MISS',
+55 silly get     'x-cache-hits': '0',
+55 silly get     'x-timer': 'S1465107213.316856,VS0,VE179',
+55 silly get     vary: 'Accept-Encoding' } ]
+56 verbose etag https://registry.npmjs.org/babel-loader from cache
+57 verbose get saving babel-loader to /Users/danielmoi/.npm/registry.npmjs.org/babel-loader/.cache.json
+58 verbose correctMkdir /Users/danielmoi/.npm correctMkdir not in flight; initializing
+59 http 304 https://registry.npmjs.org/ts-loader
+60 verbose headers { 'cache-control': 'max-age=300',
+60 verbose headers   'accept-ranges': 'bytes',
+60 verbose headers   date: 'Sun, 05 Jun 2016 06:13:34 GMT',
+60 verbose headers   via: '1.1 varnish',
+60 verbose headers   connection: 'keep-alive',
+60 verbose headers   'x-served-by': 'cache-syd1627-SYD',
+60 verbose headers   'x-cache': 'MISS',
+60 verbose headers   'x-cache-hits': '0',
+60 verbose headers   'x-timer': 'S1465107213.303017,VS0,VE722',
+60 verbose headers   vary: 'Accept-Encoding' }
+61 silly get cb [ 304,
+61 silly get   { 'cache-control': 'max-age=300',
+61 silly get     'accept-ranges': 'bytes',
+61 silly get     date: 'Sun, 05 Jun 2016 06:13:34 GMT',
+61 silly get     via: '1.1 varnish',
+61 silly get     connection: 'keep-alive',
+61 silly get     'x-served-by': 'cache-syd1627-SYD',
+61 silly get     'x-cache': 'MISS',
+61 silly get     'x-cache-hits': '0',
+61 silly get     'x-timer': 'S1465107213.303017,VS0,VE722',
+61 silly get     vary: 'Accept-Encoding' } ]
+62 verbose etag https://registry.npmjs.org/ts-loader from cache
+63 verbose get saving ts-loader to /Users/danielmoi/.npm/registry.npmjs.org/ts-loader/.cache.json
+64 verbose correctMkdir /Users/danielmoi/.npm correctMkdir not in flight; initializing
+65 silly install normalizeTree
+66 silly loadCurrentTree Finishing
+67 silly loadIdealTree Starting
+68 silly install loadIdealTree
+69 silly cloneCurrentTree Starting
+70 silly install cloneCurrentTreeToIdealTree
+71 silly cloneCurrentTree Finishing
+72 silly loadShrinkwrap Starting
+73 silly install loadShrinkwrap
+74 silly loadShrinkwrap Finishing
+75 silly loadAllDepsIntoIdealTree Starting
+76 silly install loadAllDepsIntoIdealTree
+77 silly resolveWithNewModule coffee-loader@0.7.2 checking installable status
+78 silly cache add args [ 'coffee-loader', null ]
+79 verbose cache add spec coffee-loader
+80 silly resolveWithNewModule babel-loader@6.2.4 checking installable status
+81 silly cache add args [ 'babel-loader', null ]
+82 verbose cache add spec babel-loader
+83 silly resolveWithNewModule ts-loader@0.8.2 checking installable status
+84 silly cache add args [ 'ts-loader', null ]
+85 verbose cache add spec ts-loader
+86 silly cache add parsed spec Result {
+86 silly cache add   raw: 'coffee-loader',
+86 silly cache add   scope: null,
+86 silly cache add   name: 'coffee-loader',
+86 silly cache add   rawSpec: '',
+86 silly cache add   spec: 'latest',
+86 silly cache add   type: 'tag' }
+87 silly addNamed coffee-loader@latest
+88 verbose addNamed "latest" is being treated as a dist-tag for coffee-loader
+89 info addNameTag [ 'coffee-loader', 'latest' ]
+90 silly mapToRegistry name coffee-loader
+91 silly mapToRegistry using default registry
+92 silly mapToRegistry registry https://registry.npmjs.org/
+93 silly mapToRegistry data Result {
+93 silly mapToRegistry   raw: 'coffee-loader',
+93 silly mapToRegistry   scope: null,
+93 silly mapToRegistry   name: 'coffee-loader',
+93 silly mapToRegistry   rawSpec: '',
+93 silly mapToRegistry   spec: 'latest',
+93 silly mapToRegistry   type: 'tag' }
+94 silly mapToRegistry uri https://registry.npmjs.org/coffee-loader
+95 verbose addNameTag registry:https://registry.npmjs.org/coffee-loader not in flight; fetching
+96 silly cache add parsed spec Result {
+96 silly cache add   raw: 'babel-loader',
+96 silly cache add   scope: null,
+96 silly cache add   name: 'babel-loader',
+96 silly cache add   rawSpec: '',
+96 silly cache add   spec: 'latest',
+96 silly cache add   type: 'tag' }
+97 silly addNamed babel-loader@latest
+98 verbose addNamed "latest" is being treated as a dist-tag for babel-loader
+99 info addNameTag [ 'babel-loader', 'latest' ]
+100 silly mapToRegistry name babel-loader
+101 silly mapToRegistry using default registry
+102 silly mapToRegistry registry https://registry.npmjs.org/
+103 silly mapToRegistry data Result {
+103 silly mapToRegistry   raw: 'babel-loader',
+103 silly mapToRegistry   scope: null,
+103 silly mapToRegistry   name: 'babel-loader',
+103 silly mapToRegistry   rawSpec: '',
+103 silly mapToRegistry   spec: 'latest',
+103 silly mapToRegistry   type: 'tag' }
+104 silly mapToRegistry uri https://registry.npmjs.org/babel-loader
+105 verbose addNameTag registry:https://registry.npmjs.org/babel-loader not in flight; fetching
+106 silly cache add parsed spec Result {
+106 silly cache add   raw: 'ts-loader',
+106 silly cache add   scope: null,
+106 silly cache add   name: 'ts-loader',
+106 silly cache add   rawSpec: '',
+106 silly cache add   spec: 'latest',
+106 silly cache add   type: 'tag' }
+107 silly addNamed ts-loader@latest
+108 verbose addNamed "latest" is being treated as a dist-tag for ts-loader
+109 info addNameTag [ 'ts-loader', 'latest' ]
+110 silly mapToRegistry name ts-loader
+111 silly mapToRegistry using default registry
+112 silly mapToRegistry registry https://registry.npmjs.org/
+113 silly mapToRegistry data Result {
+113 silly mapToRegistry   raw: 'ts-loader',
+113 silly mapToRegistry   scope: null,
+113 silly mapToRegistry   name: 'ts-loader',
+113 silly mapToRegistry   rawSpec: '',
+113 silly mapToRegistry   spec: 'latest',
+113 silly mapToRegistry   type: 'tag' }
+114 silly mapToRegistry uri https://registry.npmjs.org/ts-loader
+115 verbose addNameTag registry:https://registry.npmjs.org/ts-loader not in flight; fetching
+116 verbose get https://registry.npmjs.org/coffee-loader not expired, no request
+117 silly addNameTag next cb for coffee-loader with tag latest
+118 silly addNamed coffee-loader@0.7.2
+119 verbose addNamed "0.7.2" is a plain semver version for coffee-loader
+120 verbose get https://registry.npmjs.org/babel-loader not expired, no request
+121 silly addNameTag next cb for babel-loader with tag latest
+122 silly addNamed babel-loader@6.2.4
+123 verbose addNamed "6.2.4" is a plain semver version for babel-loader
+124 silly mapToRegistry name coffee-loader
+125 silly mapToRegistry using default registry
+126 silly mapToRegistry registry https://registry.npmjs.org/
+127 silly mapToRegistry data Result {
+127 silly mapToRegistry   raw: 'coffee-loader',
+127 silly mapToRegistry   scope: null,
+127 silly mapToRegistry   name: 'coffee-loader',
+127 silly mapToRegistry   rawSpec: '',
+127 silly mapToRegistry   spec: 'latest',
+127 silly mapToRegistry   type: 'tag' }
+128 silly mapToRegistry uri https://registry.npmjs.org/coffee-loader
+129 verbose addRemoteTarball https://registry.npmjs.org/coffee-loader/-/coffee-loader-0.7.2.tgz not in flight; adding
+130 verbose addRemoteTarball [ 'https://registry.npmjs.org/coffee-loader/-/coffee-loader-0.7.2.tgz',
+130 verbose addRemoteTarball   '4d3699af8a806312db3207385a842f497c1bd6fd' ]
+131 verbose get https://registry.npmjs.org/ts-loader not expired, no request
+132 silly addNameTag next cb for ts-loader with tag latest
+133 silly addNamed ts-loader@0.8.2
+134 verbose addNamed "0.8.2" is a plain semver version for ts-loader
+135 silly mapToRegistry name ts-loader
+136 silly mapToRegistry using default registry
+137 silly mapToRegistry registry https://registry.npmjs.org/
+138 silly mapToRegistry data Result {
+138 silly mapToRegistry   raw: 'ts-loader',
+138 silly mapToRegistry   scope: null,
+138 silly mapToRegistry   name: 'ts-loader',
+138 silly mapToRegistry   rawSpec: '',
+138 silly mapToRegistry   spec: 'latest',
+138 silly mapToRegistry   type: 'tag' }
+139 silly mapToRegistry uri https://registry.npmjs.org/ts-loader
+140 verbose addRemoteTarball https://registry.npmjs.org/ts-loader/-/ts-loader-0.8.2.tgz not in flight; adding
+141 verbose addRemoteTarball [ 'https://registry.npmjs.org/ts-loader/-/ts-loader-0.8.2.tgz',
+141 verbose addRemoteTarball   '7331296d13d5b3105cd905cebca39143eed2b255' ]
+142 info retry fetch attempt 1 at 4:13:34 PM
+143 info attempt registry request try #1 at 4:13:34 PM
+144 http fetch GET https://registry.npmjs.org/ts-loader/-/ts-loader-0.8.2.tgz
+145 verbose request using bearer token for auth
+146 info retry fetch attempt 1 at 4:13:34 PM
+147 info attempt registry request try #1 at 4:13:34 PM
+148 http fetch GET https://registry.npmjs.org/coffee-loader/-/coffee-loader-0.7.2.tgz
+149 verbose request using bearer token for auth
+150 silly cache afterAdd babel-loader@6.2.4
+151 verbose afterAdd /Users/danielmoi/.npm/babel-loader/6.2.4/package/package.json not in flight; writing
+152 verbose correctMkdir /Users/danielmoi/.npm correctMkdir not in flight; initializing
+153 verbose afterAdd /Users/danielmoi/.npm/babel-loader/6.2.4/package/package.json written
+154 http fetch 503 https://registry.npmjs.org/coffee-loader/-/coffee-loader-0.7.2.tgz
+155 info retry will retry, error on last attempt: Error: server error 503
+156 http fetch 503 https://registry.npmjs.org/ts-loader/-/ts-loader-0.8.2.tgz
+157 info retry will retry, error on last attempt: Error: server error 503
+158 info attempt registry request try #2 at 4:13:44 PM
+159 http fetch GET https://registry.npmjs.org/coffee-loader/-/coffee-loader-0.7.2.tgz
+160 verbose request using bearer token for auth
+161 info attempt registry request try #2 at 4:13:44 PM
+162 http fetch GET https://registry.npmjs.org/ts-loader/-/ts-loader-0.8.2.tgz
+163 verbose request using bearer token for auth
+164 http fetch 503 https://registry.npmjs.org/coffee-loader/-/coffee-loader-0.7.2.tgz
+165 info retry will retry, error on last attempt: Error: server error 503
+166 http fetch 503 https://registry.npmjs.org/ts-loader/-/ts-loader-0.8.2.tgz
+167 info retry will retry, error on last attempt: Error: server error 503
+168 info attempt registry request try #3 at 4:14:44 PM
+169 http fetch GET https://registry.npmjs.org/coffee-loader/-/coffee-loader-0.7.2.tgz
+170 verbose request using bearer token for auth
+171 info attempt registry request try #3 at 4:14:44 PM
+172 http fetch GET https://registry.npmjs.org/ts-loader/-/ts-loader-0.8.2.tgz
+173 verbose request using bearer token for auth
+174 http fetch 503 https://registry.npmjs.org/ts-loader/-/ts-loader-0.8.2.tgz
+175 error fetch failed https://registry.npmjs.org/ts-loader/-/ts-loader-0.8.2.tgz
+176 warn retry will retry, error on last attempt: Error: fetch failed with status code 503
+177 http fetch 503 https://registry.npmjs.org/coffee-loader/-/coffee-loader-0.7.2.tgz
+178 error fetch failed https://registry.npmjs.org/coffee-loader/-/coffee-loader-0.7.2.tgz
+179 warn retry will retry, error on last attempt: Error: fetch failed with status code 503
+180 info retry fetch attempt 2 at 4:14:54 PM
+181 info attempt registry request try #1 at 4:14:54 PM
+182 http fetch GET https://registry.npmjs.org/ts-loader/-/ts-loader-0.8.2.tgz
+183 verbose request using bearer token for auth
+184 info retry fetch attempt 2 at 4:14:54 PM
+185 info attempt registry request try #1 at 4:14:54 PM
+186 http fetch GET https://registry.npmjs.org/coffee-loader/-/coffee-loader-0.7.2.tgz
+187 verbose request using bearer token for auth
+188 http fetch 503 https://registry.npmjs.org/coffee-loader/-/coffee-loader-0.7.2.tgz
+189 info retry will retry, error on last attempt: Error: server error 503
+190 http fetch 503 https://registry.npmjs.org/ts-loader/-/ts-loader-0.8.2.tgz
+191 info retry will retry, error on last attempt: Error: server error 503
+192 info attempt registry request try #2 at 4:15:05 PM
+193 http fetch GET https://registry.npmjs.org/coffee-loader/-/coffee-loader-0.7.2.tgz
+194 verbose request using bearer token for auth
+195 info attempt registry request try #2 at 4:15:05 PM
+196 http fetch GET https://registry.npmjs.org/ts-loader/-/ts-loader-0.8.2.tgz
+197 verbose request using bearer token for auth
+198 http fetch 503 https://registry.npmjs.org/ts-loader/-/ts-loader-0.8.2.tgz
+199 info retry will retry, error on last attempt: Error: server error 503
+200 http fetch 503 https://registry.npmjs.org/coffee-loader/-/coffee-loader-0.7.2.tgz
+201 info retry will retry, error on last attempt: Error: server error 503
+202 info attempt registry request try #3 at 4:16:05 PM
+203 http fetch GET https://registry.npmjs.org/ts-loader/-/ts-loader-0.8.2.tgz
+204 verbose request using bearer token for auth
+205 info attempt registry request try #3 at 4:16:05 PM
+206 http fetch GET https://registry.npmjs.org/coffee-loader/-/coffee-loader-0.7.2.tgz
+207 verbose request using bearer token for auth
+208 http fetch 503 https://registry.npmjs.org/coffee-loader/-/coffee-loader-0.7.2.tgz
+209 error fetch failed https://registry.npmjs.org/coffee-loader/-/coffee-loader-0.7.2.tgz
+210 warn retry will retry, error on last attempt: Error: fetch failed with status code 503
+211 http fetch 503 https://registry.npmjs.org/ts-loader/-/ts-loader-0.8.2.tgz
+212 error fetch failed https://registry.npmjs.org/ts-loader/-/ts-loader-0.8.2.tgz
+213 warn retry will retry, error on last attempt: Error: fetch failed with status code 503
+214 info retry fetch attempt 3 at 4:17:05 PM
+215 info attempt registry request try #1 at 4:17:05 PM
+216 http fetch GET https://registry.npmjs.org/coffee-loader/-/coffee-loader-0.7.2.tgz
+217 verbose request using bearer token for auth
+218 info retry fetch attempt 3 at 4:17:05 PM
+219 info attempt registry request try #1 at 4:17:05 PM
+220 http fetch GET https://registry.npmjs.org/ts-loader/-/ts-loader-0.8.2.tgz
+221 verbose request using bearer token for auth
+222 http fetch 503 https://registry.npmjs.org/coffee-loader/-/coffee-loader-0.7.2.tgz
+223 info retry will retry, error on last attempt: Error: server error 503
+224 http fetch 503 https://registry.npmjs.org/ts-loader/-/ts-loader-0.8.2.tgz
+225 info retry will retry, error on last attempt: Error: server error 503
+226 info attempt registry request try #2 at 4:17:15 PM
+227 http fetch GET https://registry.npmjs.org/coffee-loader/-/coffee-loader-0.7.2.tgz
+228 verbose request using bearer token for auth
+229 info attempt registry request try #2 at 4:17:15 PM
+230 http fetch GET https://registry.npmjs.org/ts-loader/-/ts-loader-0.8.2.tgz
+231 verbose request using bearer token for auth
+232 http fetch 503 https://registry.npmjs.org/coffee-loader/-/coffee-loader-0.7.2.tgz
+233 info retry will retry, error on last attempt: Error: server error 503
+234 http fetch 503 https://registry.npmjs.org/ts-loader/-/ts-loader-0.8.2.tgz
+235 info retry will retry, error on last attempt: Error: server error 503
+236 info attempt registry request try #3 at 4:18:15 PM
+237 http fetch GET https://registry.npmjs.org/coffee-loader/-/coffee-loader-0.7.2.tgz
+238 verbose request using bearer token for auth
+239 info attempt registry request try #3 at 4:18:15 PM
+240 http fetch GET https://registry.npmjs.org/ts-loader/-/ts-loader-0.8.2.tgz
+241 verbose request using bearer token for auth
+242 http fetch 503 https://registry.npmjs.org/coffee-loader/-/coffee-loader-0.7.2.tgz
+243 error fetch failed https://registry.npmjs.org/coffee-loader/-/coffee-loader-0.7.2.tgz
+244 http fetch 503 https://registry.npmjs.org/ts-loader/-/ts-loader-0.8.2.tgz
+245 error fetch failed https://registry.npmjs.org/ts-loader/-/ts-loader-0.8.2.tgz
+246 silly rollbackFailedOptional Starting
+247 silly rollbackFailedOptional Finishing
+248 silly runTopLevelLifecycles Starting
+249 silly runTopLevelLifecycles Finishing
+250 silly install printInstalled
+251 verbose stack Error: fetch failed with status code 503
+251 verbose stack     at Request.<anonymous> (/Users/danielmoi/.npm-packages/lib/node_modules/npm/node_modules/npm-registry-client/lib/fetch.js:51:14)
+251 verbose stack     at emitOne (events.js:77:13)
+251 verbose stack     at Request.emit (events.js:169:7)
+251 verbose stack     at Request.onRequestResponse (/Users/danielmoi/.npm-packages/lib/node_modules/npm/node_modules/request/request.js:977:10)
+251 verbose stack     at emitOne (events.js:77:13)
+251 verbose stack     at ClientRequest.emit (events.js:169:7)
+251 verbose stack     at HTTPParser.parserOnIncomingClient (_http_client.js:415:21)
+251 verbose stack     at HTTPParser.parserOnHeadersComplete (_http_common.js:88:23)
+251 verbose stack     at TLSSocket.socketOnData (_http_client.js:305:20)
+251 verbose stack     at emitOne (events.js:77:13)
+252 verbose cwd /Users/danielmoi/Documents/HOMEBASE/Technology/code-sandbox/modules-app
+253 error Darwin 15.5.0
+254 error argv "/usr/local/bin/node" "/Users/danielmoi/.npm-packages/bin/npm" "install" "--save-dev" "babel-loader" "coffee-loader" "ts-loader"
+255 error node v4.2.2
+256 error npm  v3.9.3
+257 error fetch failed with status code 503
+258 error If you need help, you may report this error at:
+258 error     <https://github.com/npm/npm/issues>
+259 verbose exit [ 1, true ]
