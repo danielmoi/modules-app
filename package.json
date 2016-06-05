@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "browserify": "browserify ./src/entry.js -o ./bundle.js"
+    "browserify": "browserify ./src/entry.js -o ./bundle.js",
+    "webpack": "webpack ./src/entry.js bundle.js"
   },
   "keywords": [],
   "author": "",
