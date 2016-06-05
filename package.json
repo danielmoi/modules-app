@@ -1,5 +1,5 @@
 {
-  "name": "modules-mark-brown",
+  "name": "modules-app",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -7,10 +7,11 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "browserify": "browserify ./src/entry.js -o ./bundle.js",
     "webpack": "webpack ./src/entry.js bundle.js",
-    "coffee": "coffee --output ./dist ./src/coffee-lib.coffee"
+    "coffee": "coffee --output ./dist ./src/coffee-lib.coffee",
+    "tsc": "tsc --outDir ./dist ./src/ts-lib.ts"
   },
   "keywords": [],
-  "author": "",
+  "author": "Daniel Moi",
   "license": "ISC",
   "devDependencies": {
     "babel-cli": "^6.9.0",
