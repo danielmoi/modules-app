@@ -1,173 +1,91 @@
-/******/ (function(modules) { // webpackBootstrap
-/******/ 	// The module cache
-/******/ 	var installedModules = {};
+System.registerDynamic("npm:lodash@4.13.1/_baseSum.js", [], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this,
+      GLOBAL = this;
+  function baseSum(array, iteratee) {
+    var result,
+        index = -1,
+        length = array.length;
+    while (++index < length) {
+      var current = iteratee(array[index]);
+      if (current !== undefined) {
+        result = result === undefined ? current : (result + current);
+      }
+    }
+    return result;
+  }
+  module.exports = baseSum;
+  return module.exports;
+});
 
-/******/ 	// The require function
-/******/ 	function __webpack_require__(moduleId) {
+System.registerDynamic("npm:lodash@4.13.1/identity.js", [], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this,
+      GLOBAL = this;
+  function identity(value) {
+    return value;
+  }
+  module.exports = identity;
+  return module.exports;
+});
 
-/******/ 		// Check if module is in cache
-/******/ 		if(installedModules[moduleId])
-/******/ 			return installedModules[moduleId].exports;
+System.registerDynamic("npm:lodash@4.13.1/sum.js", ["npm:lodash@4.13.1/_baseSum.js", "npm:lodash@4.13.1/identity.js"], true, function($__require, exports, module) {
+  ;
+  var define,
+      global = this,
+      GLOBAL = this;
+  var baseSum = $__require('npm:lodash@4.13.1/_baseSum.js'),
+      identity = $__require('npm:lodash@4.13.1/identity.js');
+  function sum(array) {
+    return (array && array.length) ? baseSum(array, identity) : 0;
+  }
+  module.exports = sum;
+  return module.exports;
+});
 
-/******/ 		// Create a new module (and put it into the cache)
-/******/ 		var module = installedModules[moduleId] = {
-/******/ 			exports: {},
-/******/ 			id: moduleId,
-/******/ 			loaded: false
-/******/ 		};
+System.register('src/es6-lib.js', ['npm:lodash@4.13.1/sum.js'], function (_export) {
+  'use strict';
 
-/******/ 		// Execute the module function
-/******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
+  var sum, double, addFive;
+  return {
+    setters: [function (_npmLodash4131SumJs) {
+      sum = _npmLodash4131SumJs['default'];
+    }],
+    execute: function () {
+      double = function double(number) {
+        return number * 2;
+      };
 
-/******/ 		// Flag the module as loaded
-/******/ 		module.loaded = true;
+      addFive = function addFive(number) {
+        return sum([number, 5]);
+      };
 
-/******/ 		// Return the exports of the module
-/******/ 		return module.exports;
-/******/ 	}
+      _export('double', double);
 
+      _export('addFive', addFive);
+    }
+  };
+});
+System.register('src/entry.js', ['src/es6-lib.js'], function (_export) {
+  // require our module (IMPORT)
+  // var lib = require('../dist/es6-lib.js');
 
-/******/ 	// expose the modules object (__webpack_modules__)
-/******/ 	__webpack_require__.m = modules;
+  // use the double function from our module
+  'use strict';
 
-/******/ 	// expose the module cache
-/******/ 	__webpack_require__.c = installedModules;
+  var lib;
+  return {
+    setters: [function (_srcEs6LibJs) {
+      lib = _srcEs6LibJs['default'];
+    }],
+    execute: function () {
+      console.log(lib.double(2));
 
-/******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "";
-
-/******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(0);
-/******/ })
-/************************************************************************/
-/******/ ([
-/* 0 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// require our module (IMPORT)
-	var lib = __webpack_require__(1);
-
-	// use the double function from our module
-	console.log(lib.double(2));
-
-	// use the addFive function from our module
-	console.log(lib.addFive(2));
-
-
-/***/ },
-/* 1 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	exports.addFive = exports.double = undefined;
-
-	var _sum = __webpack_require__(2);
-
-	var _sum2 = _interopRequireDefault(_sum);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	var double = function double(number) {
-	  return number * 2;
-	};
-	var addFive = function addFive(number) {
-	  return (0, _sum2.default)([number, 5]);
-	};
-
-	exports.double = double;
-	exports.addFive = addFive;
-
-
-/***/ },
-/* 2 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var baseSum = __webpack_require__(3),
-	    identity = __webpack_require__(4);
-
-	/**
-	 * Computes the sum of the values in `array`.
-	 *
-	 * @static
-	 * @memberOf _
-	 * @since 3.4.0
-	 * @category Math
-	 * @param {Array} array The array to iterate over.
-	 * @returns {number} Returns the sum.
-	 * @example
-	 *
-	 * _.sum([4, 2, 8, 6]);
-	 * // => 20
-	 */
-	function sum(array) {
-	  return (array && array.length)
-	    ? baseSum(array, identity)
-	    : 0;
-	}
-
-	module.exports = sum;
-
-
-/***/ },
-/* 3 */
-/***/ function(module, exports) {
-
-	/**
-	 * The base implementation of `_.sum` and `_.sumBy` without support for
-	 * iteratee shorthands.
-	 *
-	 * @private
-	 * @param {Array} array The array to iterate over.
-	 * @param {Function} iteratee The function invoked per iteration.
-	 * @returns {number} Returns the sum.
-	 */
-	function baseSum(array, iteratee) {
-	  var result,
-	      index = -1,
-	      length = array.length;
-
-	  while (++index < length) {
-	    var current = iteratee(array[index]);
-	    if (current !== undefined) {
-	      result = result === undefined ? current : (result + current);
-	    }
-	  }
-	  return result;
-	}
-
-	module.exports = baseSum;
-
-
-/***/ },
-/* 4 */
-/***/ function(module, exports) {
-
-	/**
-	 * This method returns the first argument given to it.
-	 *
-	 * @static
-	 * @since 0.1.0
-	 * @memberOf _
-	 * @category Util
-	 * @param {*} value Any value.
-	 * @returns {*} Returns `value`.
-	 * @example
-	 *
-	 * var object = { 'user': 'fred' };
-	 *
-	 * console.log(_.identity(object) === object);
-	 * // => true
-	 */
-	function identity(value) {
-	  return value;
-	}
-
-	module.exports = identity;
-
-
-/***/ }
-/******/ ]);
+      // use the addFive function from our module
+      console.log(lib.addFive(2));
+    }
+  };
+});
+//# sourceMappingURL=bundle.js.map
