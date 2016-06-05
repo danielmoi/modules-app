@@ -1,5 +1,5 @@
 // require our module (IMPORT)
-var lib = require('./lib.js');
+var lib = require('../dist/es6-lib.js');
 
 // use the double function from our module
 console.log(lib.double(2));

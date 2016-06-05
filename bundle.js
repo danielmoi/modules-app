@@ -58,24 +58,28 @@
 /* 1 */
 /***/ function(module, exports, __webpack_require__) {
 
-	// require sum from lodash (IMPORT)
-	var sum = __webpack_require__(2);
+	'use strict';
 
-	// our first module
-	var double = function(num) {
-	  return num * 2;
-	}
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.addFive = exports.double = undefined;
 
-	// use sum from lodash
-	var addFive = function(num) {
-	  return sum([num, 5]);
-	}
+	var _sum = __webpack_require__(2);
 
-	// our exports (EXPORT)
-	module.exports = {
-	  double: double,
-	  addFive: addFive
-	}
+	var _sum2 = _interopRequireDefault(_sum);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var double = function double(number) {
+	  return number * 2;
+	};
+	var addFive = function addFive(number) {
+	  return (0, _sum2.default)([number, 5]);
+	};
+
+	exports.double = double;
+	exports.addFive = addFive;
 
 
 /***/ },
